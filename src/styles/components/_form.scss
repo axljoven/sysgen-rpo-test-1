@@ -1,0 +1,87 @@
+.form {
+    .form-section {
+        position: relative;
+    }
+
+    .form-heading {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.60rem;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        position: absolute;
+        top: -18px;
+    }
+
+    .form-group {
+        margin-top: 4px;
+        margin-bottom: 32px;
+        position: relative;
+
+        label {
+            position: absolute;
+            top: -18px;
+            display: inline-block;
+            font-weight: $fontWeightSemibold;
+            font-size: 0.60rem;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid transparentize($colorDefault, 0.75);
+            border-radius: 2px;
+             font-size: 0.75rem;
+        }
+
+        .inline {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: stretch;
+
+            label, input {
+                position: unset;
+                display: inline-block;
+            }
+            input {
+                width: 14px;
+                margin-right: 10px;
+            }
+            label {
+                margin: 0;
+                width: 50px;
+            }
+        }
+    }
+
+    /**
+     * ----------------------------
+     * CUSTOMS
+     * ----------------------------
+     */
+
+    /**
+     * Target ingredients heading to 
+     * increase top position
+     */
+    .form-section.ingredients {
+        .form-heading {
+            top: -48px;
+        }
+    }
+
+    /**
+     * Target ingredients heading to 
+     * increase top position
+     */
+    .form-section.directions {
+        .form-group {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.logo {
+    a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .logo_text,
+    .logo_image {
+        font-family: $fontLogo;
+        font-size: 2rem; // 32px (16px)
+        color: $colorDefault;
+    }
+
+    .logo_image {
+        transform: translate(16px, -4px);
+    }
+}

@@ -1,0 +1,48 @@
+.site-nav {
+    .site-nav_list {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .site-nav_item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        
+        margin-left: 60px;
+        transition: all 0.2s;
+        position: relative;
+
+        a {
+            font-size: 1.125rem; // 18px (16px)
+        }
+
+        &:after {
+            content: "";
+            display: inline-block;
+            background-color: $colorDefault;
+            height: 1px;
+            width: 0%;
+            opacity: 0;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            transition: all 0.2s;
+        }
+
+        &:hover:after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}

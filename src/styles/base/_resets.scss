@@ -1,0 +1,16 @@
+/**
+ * -----------------------------------------------------------
+ * Site Resets
+ * -----------------------------------------------------------
+ */ 
+
+// Imports
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Sacramento&family=Yeseva+One&display=swap');
+
+*, html, body {
+    font-family: $fontDefault;
+    font-size: $fontSize;
+    color: $colorDefault;
+    font-weight: $fontWeightRegular;
+}
